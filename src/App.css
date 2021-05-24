@@ -17,7 +17,7 @@ header h2 {
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: start;
+          align-items: flex-start;
   color: #ecc1be;
   font-size: 1.2rem;
   font-weight: 400;
@@ -80,5 +80,30 @@ header h2 {
   height: 5px;
   background-color: #ecc1be;
   margin-top: 20px;
+}
+
+.img-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.img-wrap {
+  overflow: hidden;
+  height: 0;
+  padding: 50% 0;
+  /*padding controls the height will always be perfectly square regardless of width */
+  position: relative;
+}
+
+.img-wrap img {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 150%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 /*# sourceMappingURL=App.css.map */
