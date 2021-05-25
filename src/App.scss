@@ -90,3 +90,27 @@
         
     }
 }
+.delete-btn{
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top:0;
+}
+
+.modal{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(5, 4, 4, 0.747);
+    z-index: 2;
+    img{
+        display: block;
+        max-width: 60%;
+        max-height: 80%;
+        margin: 70px auto;
+        border: 3px solid #Fff;
+       
+    }
+}
