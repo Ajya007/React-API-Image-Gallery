@@ -1,8 +1,13 @@
-import useFirestore from './useFirestore.js'
+
+import {useState,useEffect} from 'react'
 
 
-const ImageGrid = ({setModalUrl}) => {
-    const { docs } = useFirestore('images')
+
+const ImageGrid = ({setModalUrl,docs,onDelete}) => {
+   
+
+
+
  
 
     return (
@@ -10,13 +15,15 @@ const ImageGrid = ({setModalUrl}) => {
         <div className="img-grid">
   
          {docs && docs.map((doc) =>
+         <div style={{position:'relative'}} key={doc.id} >
 
-           <div className='img-wrap' key={doc.id} onClick={() => setModalUrl(doc.url)}>
+           <div className='img-wrap' onClick={() => setModalUrl(doc.url)} style={{border:'3px solid black'}}>
              <img src={doc.url} alt='img'/>
-         
+           
            </div>
+            <button style={{backgroundColor:'red',color:'#fff',position:'absolute',zIndex:'1',top:'0',right:'0',height:'25px',width:'90px',cursor:'pointer'}} onClick={() => onDelete(doc.id)}>delete</button>
 
-         
+            </div>
          )}
 
         </div>
