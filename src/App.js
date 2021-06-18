@@ -28,7 +28,7 @@ function App() {
   
     })
     return () => unsub();
-    }, ['images',docs])
+    }, [docs])
 
 
    

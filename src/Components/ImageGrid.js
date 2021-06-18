@@ -1,7 +1,4 @@
 
-import {useState,useEffect} from 'react'
-
-
 
 const ImageGrid = ({setModalUrl,docs,onDelete}) => {
    
