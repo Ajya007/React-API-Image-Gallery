@@ -4,12 +4,12 @@ import 'firebase/firestore';
  
  // Your web app's Firebase configuration
   var firebaseConfig = {
-    apiKey: "AIzaSyBA62ifkodZs_8xK97oGmzv2UuUxW9hV0k",
-    authDomain: "fire-gram-94244.firebaseapp.com",
-    projectId: "fire-gram-94244",
-    storageBucket: "fire-gram-94244.appspot.com",
-    messagingSenderId: "42465729584",
-    appId: "1:42465729584:web:faef6672d82b49e8f421f5"
+    apiKey: "AIzaSyAC6E3876kBWzl-2waK4o_tMUqI4-Pzxq4",
+    authDomain: "firegram-9084f.firebaseapp.com",
+    projectId: "firegram-9084f",
+    storageBucket: "firegram-9084f.appspot.com",
+    messagingSenderId: "589888380246",
+    appId: "1:589888380246:web:415f09a99059ce10ca4af7"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
